@@ -20,7 +20,7 @@ describe AppDotNet do
     adn.redirect_uri.should eq expected['redirect_uri']
   end
 
-  context 'wihtout a test config' do
+  context 'without a test config' do
     before do
       tmpdir = Dir.tmpdir
       adn.stub(:config_location).and_return("#{tmpdir}/appdotnet.yml")
